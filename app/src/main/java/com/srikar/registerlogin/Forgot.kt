@@ -16,12 +16,6 @@ class Forgot : AppCompatActivity() {
 
         val pass1 = intent.getStringExtra("pass1")
 
-        if(pass1 != "") {
-            binding3.fpass.text = pass1
-        }
-        else{
-            binding3.fpass.text = "admin"
-        }
-
+        binding3.fpass.text = pass1
     }
 }

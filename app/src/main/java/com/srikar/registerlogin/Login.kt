@@ -20,12 +20,9 @@ class Login : AppCompatActivity() {
         val name1 = intent.getStringExtra("uname")
         val pass1 = intent.getStringExtra("password")
 
-        val name2 = "admin"
-        val pass2 = "admin"
-
         binding2.logBtn.setOnClickListener(){
             if(!TextUtils.isEmpty(binding2.name.text.toString()) && !TextUtils.isEmpty(binding2.pass.text.toString())) {
-                if((binding2.name.text.toString() == name1 && binding2.pass.text.toString() == pass1) || (binding2.name.text.toString() == name2 && binding2.pass.text.toString() == pass2)) {
+                if((binding2.name.text.toString() == name1 && binding2.pass.text.toString() == pass1)) {
                     Toast.makeText(this, "LOGGED IN SUCCESSFULLY", Toast.LENGTH_SHORT).show()
                     var intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
@@ -40,14 +37,14 @@ class Login : AppCompatActivity() {
         }
 
         binding2.forgot.setOnClickListener(){
-            if(binding2.name.text.toString() == name1 || binding2.name.text.toString() == name2) {
+            if(binding2.name.text.toString() == name1) {
                 Toast.makeText(this, "Redirecting...", Toast.LENGTH_SHORT).show()
                 var intent = Intent(this, Forgot::class.java)
                 intent.putExtra("pass1",pass1)
                 startActivity(intent)
             }
             else{
-                Toast.makeText(this,"Enter Username",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Invalid Username",Toast.LENGTH_SHORT).show()
             }
         }
 
