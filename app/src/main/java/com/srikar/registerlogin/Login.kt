@@ -26,6 +26,7 @@ class Login : AppCompatActivity() {
                     Toast.makeText(this, "LOGGED IN SUCCESSFULLY", Toast.LENGTH_SHORT).show()
                     var intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
+                    finish()
                 }
                 else{
                     Toast.makeText(this,"INCORRECT CREDENTIALS",Toast.LENGTH_SHORT).show()

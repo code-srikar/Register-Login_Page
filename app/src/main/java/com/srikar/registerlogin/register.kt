@@ -24,6 +24,7 @@ class register : AppCompatActivity() {
                     intent.putExtra("uname", binding1.name.text.toString())
                     intent.putExtra("password", binding1.pass.text.toString())
                     startActivity(intent)
+                    finish()
                 }
                 else{
                     Toast.makeText(this,"PASSWORDS DO NOT MATCH",Toast.LENGTH_SHORT).show()
