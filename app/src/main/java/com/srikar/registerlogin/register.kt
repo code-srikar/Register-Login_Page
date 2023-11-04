@@ -32,13 +32,8 @@ class register : AppCompatActivity() {
             else{
                 Toast.makeText(this,"Fill-in the Credentials",Toast.LENGTH_SHORT).show()
             }
-
-            binding1.already.setOnClickListener(){
-                var intent = Intent(this,Login::class.java)
-                startActivity(intent)
             }
 
-        }
 
     }
 }
