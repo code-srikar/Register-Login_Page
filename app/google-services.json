@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "995149444558",
+    "project_id": "register-and-login-bf4de",
+    "storage_bucket": "register-and-login-bf4de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995149444558:android:9ee0962c122ef1a64e279f",
+        "android_client_info": {
+          "package_name": "com.srikar.registerlogin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt1Cg9Z-oiaHt4AyXDKSH0KwS1SdCOB4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

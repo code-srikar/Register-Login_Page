@@ -97,4 +97,15 @@
         android:paddingBottom="15dp"
         android:paddingTop="15dp" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Acc"
+        android:text="Have an Account?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_below="@id/regBtn"/>
+
 </RelativeLayout>
